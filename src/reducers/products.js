@@ -1,4 +1,4 @@
-import productsList from './product';
+import productsList from '../fakeDB/product';
 
 const PRODUCT = productsList;
 

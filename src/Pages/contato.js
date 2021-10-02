@@ -1,3 +1,7 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { Grid, Button, TextField } from '@material-ui/core/';
 
@@ -52,7 +56,7 @@ const Contatos = () => {
     }  
 
     return(
-        <>
+        <React.Fragment>
             <Grid container direction="row" xs={12}>
                 <TextField id="name" label="Name" value={author} onChange={(event)=>{setAuthor(event.target.value)}} fullWidth/>
                 <TextField id="message" label="Message" value={content} onChange={(event)=>{setContent(event.target.value)}} fullWidth/>
@@ -86,7 +90,7 @@ const Contatos = () => {
                     </div>
                 )
             } )}
-        </>
+        </React.Fragment>
     )
 }
 

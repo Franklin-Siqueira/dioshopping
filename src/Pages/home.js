@@ -1,3 +1,6 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Paper, Grid, Typography, List, makeStyles } from '@material-ui/core/';
@@ -19,22 +22,22 @@ const HomePage = () => {
     const products = useSelector(state => state.products)
     const classes = useStyles();
 
-    const categorys = products.map(
+    const categories = products.map(
         category => {
             const container = { };
-            container['id'] = category.id_categorys;
-            container['name'] = category.name_categorys;
+            container['id'] = category.category_ID;
+            container['name'] = category.category_Name;
             return container;
         }
     )
 
-    const category = categorys.map(JSON.stringify)
+    const category = categories.map(JSON.stringify)
                     .filter(function(item, index, arr){
                         return arr.indexOf(item, index + 1) === -1;
                     })
                     .map(JSON.parse)
 
-    const arrayCategory = categorys.map(category => category.name)
+    const arrayCategory = categories.map(category => category.name)
     let count = { };
 
     for(let i = 0; i < arrayCategory.length; i++){
@@ -70,10 +73,10 @@ const HomePage = () => {
                 {products.map(item => {
                     return(
                         <Card
-                            key={item.id_product}
+                            key={item.product_ID}
                             product={item}
                         >
-                            {item.name_product}
+                            {item.product_Name}
                         </Card>
                     )
                 })}
