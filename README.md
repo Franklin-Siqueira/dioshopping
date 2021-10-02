@@ -66,9 +66,8 @@ The ..
 
 
 
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Franklin-Siqueira/Vtex-GA-HC21-ChallengeUpMedal/LICENSE)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Franklin-Siqueira/dioshopping/blob/main/LICENSE.md)
 
 
-This sample code is released using the MIT license. For more information see the [LICENSE](https://github.com/Franklin-Siqueira/Vtex-GA-HC21-ChallengeUpMedal/LICENSE) file.
-
-
+This sample code is released using the MIT license. For more information see the [LICENSE](https://github.com/Franklin-Siqueira/dioshopping/blob/main/LICENSE.md) file.
+ 
